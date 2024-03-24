@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.willCompany</groupId>
 	<artifactId>social-media-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>social-media-api</name>
 	<description>Social Media API project for Spring Boot</description>
 	<properties>
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+            <type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
