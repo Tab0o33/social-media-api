@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.willCompany</groupId>
 	<artifactId>social-media-api</artifactId>
-	<version>0.2.0</version>
+	<version>0.3.0</version>
 	<name>social-media-api</name>
 	<description>Social Media API project for Spring Boot</description>
 	<properties>

@@ -3,9 +3,9 @@ package com.willCompany.socialmediaapi.model;
 import lombok.Data;
 
 @Data
-public class PostDTO {
+public class UpdatePostDTO {
 
-    private String image;
-    private String text;
+    private Boolean isLiked;
     
 }
+

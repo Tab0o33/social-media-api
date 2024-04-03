@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.willCompany.socialmediaapi.model.Post;
-import com.willCompany.socialmediaapi.model.PostDTO;
+import com.willCompany.socialmediaapi.model.CreatePostDTO;
 import com.willCompany.socialmediaapi.repository.PostRepository;
 
 import lombok.Data;
@@ -27,22 +27,19 @@ public class PostService {
         return postRepository.findAll();
     }
 
-    public void delete(final Long id) {
-        postRepository.deleteById(id);
-    }
-
-    public Post save(PostDTO postDTO) {
-    	
+    public Post save(final CreatePostDTO postDTO) {
         Post post = new Post();
         post.setText(postDTO.getText());
         if (postDTO.getImage() != null && !postDTO.getImage().isEmpty()) {
-        	post.setImage(postDTO.getImage());
+            post.setImage(postDTO.getImage());
         }
-        post.setUserId(1l);
+        post.setUserId(1L);
         post.setCreatedDate(LocalDateTime.now());
-        // Vous pouvez ajouter d'autres attributs si nécessaire
-
         return postRepository.save(post);
+    }
+
+    public void delete(final Long id) {
+        postRepository.deleteById(id);
     }
 
 }
