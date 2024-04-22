@@ -1,5 +1,6 @@
 HELP.md
 target/
+.settings
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -32,4 +33,5 @@ build/
 ### VS Code ###
 .vscode/
 
-credentials.properties
+.env
+src/main/resources/data.sql
