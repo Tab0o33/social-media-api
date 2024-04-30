@@ -33,5 +33,10 @@ build/
 ### VS Code ###
 .vscode/
 
+### Local resources ###
 src/main/resources/.env
-src/main/resources/data.sql
+src/main/resources/prod.env
+src/main/resources/Dockerfile
+
+### Docker DB data ###
+dbdata
