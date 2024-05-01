@@ -16,8 +16,11 @@ import com.willCompany.socialmediaapi.model.UpdatePostDTO;
 import com.willCompany.socialmediaapi.service.PostService;
 import com.willCompany.socialmediaapi.service.UserPostService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/public")
+@Tag(name = "Post", description = "Endpoints to handle posts")
 public class PostController {
 
     @Autowired

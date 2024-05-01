@@ -11,8 +11,11 @@ import com.willCompany.socialmediaapi.model.CreateUserDTO;
 import com.willCompany.socialmediaapi.model.User;
 import com.willCompany.socialmediaapi.service.UserService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api/v1/public")
+@Tag(name = "User", description = "Endpoints to handle users")
 public class UserController {
 
     @Autowired
@@ -27,7 +30,6 @@ public class UserController {
     public Iterable<User> getAll() {
         return userService.getAll();
     }
-
 
     /**
      * Create - Add a new user
